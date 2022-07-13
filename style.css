@@ -2,7 +2,7 @@
 
 body{
     font-family: 'Poppins', sans-serif;
-    background-color: aliceblue;
+    background-color: #FFFFFF;
     margin: 0;
 }
 header{
@@ -28,11 +28,16 @@ nav a{
     font-family: 'Poppins', sans-serif;
 
 }
+#menu-button{
+    background-color: #2D25A0;
+    border: none;
+}
 #button{
-    
+    background-color: #E02C6D;
     font-size: 15px;
     font-family: 'Poppins', sans-serif;
     padding: 11px 24px;
+    border: none;
 }
 h2{
     font-size: 64px;
@@ -43,7 +48,7 @@ h2{
     display: grid;
     grid-template-columns: repeat(2,1fr);
     grid-column-gap: 60px;
-    padding: 0px 141px 86px 156px;
+    padding: 50px 141px 86px 156px;
     justify-content: center;
     
 }
@@ -65,7 +70,7 @@ h2{
     
     
 }
-button{
+.button{
     color: white;
     background-color: #E02C6D;
     font-size: 15px;
@@ -100,10 +105,11 @@ i{
     width: 500px;
     margin: 10px;
     background-color: #ffffff;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
 
 }
 .details h2{
-    color: #E02C6D;
+    color: black;
     font-size: 20px;
 }
 
@@ -114,15 +120,16 @@ i{
     grid-template-columns: repeat(2, 1fr);
     grid-column-gap: 69px;
     justify-content: center;
-    padding: 0px 156px 158px 182px;
+    padding: 0px 156px 108px 182px;
 
 }
 .details-messi{
     width: 100%;
 }
 .details-messi h2{
-    font-size: 40px;
+    font-size: 38px;
     color: black;
+    font-weight: 800;
     
 }
 .img-messi{
@@ -130,8 +137,8 @@ i{
     
 }
 .img-messi img{
-    width: 567px;
-    height: 427px;
+    width: 517px;
+    height: 370px;
     overflow: hidden;
 }
 
@@ -149,8 +156,8 @@ i{
     
 }
 .logo img{
-    width: 350px;
-    height: 90px;
+    width: 380px;
+    height: 100px;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -171,3 +178,107 @@ i{
 .fa-solid{
     background: none;
 }
+
+/* ..............Quary..............*/ 
+
+@media (max-width: 700px ) {
+   
+   /*
+    #menu{
+        
+        display: ;
+        position: absolute;
+        background-color: aquamarine;
+        min-width: 100px;
+        z-index: 1;
+        
+    }
+    #menu a{
+        color: aqua;
+        position: relative;
+        display: block;
+        
+    }
+    #menu:hover #menu a{
+        display: block;
+    }
+    */
+
+    main{
+        padding: 20px;
+    }
+    nav{
+        display: none;
+        overflow: hidden;
+    }
+    p{
+        font-size: 25px;
+    }
+
+    /*top bar ------*/
+    .topbar{
+        display: flex;
+        flex-direction: column;
+        row-gap: 30px;
+        align-items: center;
+        padding: 30px;
+        
+        
+    }
+    .topbar h2{
+        font-size: 45px;
+    }
+    .button{
+        font-size: 25px;
+        padding: 15px 25px;
+    }
+    .img-top img{
+        width: 430px;
+        height: 400px;
+    }
+
+    /*album.............*/
+
+    
+    .showcase{
+        padding: 20px 20px;
+    }
+    .album{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        
+        
+    
+    }
+    .players{
+        padding: 20px;
+        margin: 20px;
+        width: 100%;
+    }
+    .album h2{
+        font-size: 40px;
+        color: black;
+    }
+    
+    /*Messi......*/
+
+    .messi{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-row-gap: 30px;
+        padding: 10px;
+        width: 100%;
+    }
+    .messi img{
+        width: 450px;
+        height: 350px;
+    }
+
+
+
+}
+
+
+
