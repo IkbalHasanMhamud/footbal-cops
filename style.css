@@ -50,7 +50,11 @@ h2{
     grid-column-gap: 60px;
     padding: 50px 141px 86px 156px;
     justify-content: center;
-    
+        
+}
+.topbar:hover {
+    background-color: #197954;
+    transition: 2s;
 }
 .img-top{
     width: 100%;
@@ -177,6 +181,11 @@ i{
 }
 .fa-solid{
     background: none;
+}
+i {
+    background-color: none;
+    
+    
 }
 
 /* ..............Quary..............*/ 
